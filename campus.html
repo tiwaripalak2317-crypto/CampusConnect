@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPUS CONNECT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="LOGO.jpeg" width="100" alt="mybackground">
+        </div>
+        <ul>
+            <li class="item"> <a href="#HOME">HOME</a></li>
+            <li class="item"> <a href="#GALLERY">GALLERY</a></li>
+            <li class="item"> <a href="#STUDENT HUB">STUDENT HUB</a></li>
+            <li class="item"> <a href="#FACILITIES">FACILITIES</a></li>
+            <li class="item"> <a href="#CONTACT">CONTACT</a></li>
+        </ul>
+        <button id="login">👤Student Login</button>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home">
+        <h1 id="primary">Welcome to CampusConnect</h1>
+        <h4>Your Smart Campus Companion</h4>
+        <p>CampusConnect is a smart platform designed to help students explore campus facilities, access important
+            informatiom, and stay connected with campus life.</p>
+        <BUTTON class="btn">Explore Campus</BUTTON>
+
+        <div class="feature-container">
+            <div class="feature-box">
+                <img src="library.jpg.jpg" width="100px">
+                <h4>Library</h4>
+                <p>Access book,study materials, and digital resources for better learning.</p>
+            </div>
+            <div class="feature-box">
+                <img src="canteen.jpg.jpg" width="200px" height="100px">
+                <h4>Canteen</h4>
+                <p>Enjoy fresh meals, snacks, and beverages in a comfortable enviornment.</p>
+            </div>
+            <div class="feature-box">
+                <img src="hostel.jpg.jpg" width="190px" height="120px">
+                <h4>Hostel</h4>
+                <p>Safe and comfortable accomodation with essential facilities for students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- image slide section -->
+
+    <section id="gallery">
+        <h1 id="head">Explore Our Campus</h1>
+        <h5 id="head1">"A glimpse of our college, facilities,and student life."</h5>
+        <div class="slider-container">
+
+            <div class="slide">
+                <img src="campus.jpg.jpeg" alt="campus" width="80%" height="800px">
+                <h3>Main Building</h3>
+                <p>Beautiful campus building.</p>
+            </div>
+
+            <div class="slide">
+                <img src="canteen1.jpg.jpg" alt="canteen" width="80%" height="800px">
+                <h3>Canteen</h3>
+                <p>Our campus canteen where students enjoy food and spend time.</p>
+            </div>
+
+            <div class="slide">
+                <img src="library.jpg" alt="library" width="80%" height="800px">
+                <h3>Library</h3>
+                <p>Peaceful place for study.</p>
+            </div>
+
+            <div class="slide">
+                <img src="hostel1.jpg.jpg" alt="hostel" width="80%" height="800px" >
+                <h3>Hostel</h3>
+                <p>Comfotable hostel facilities.</p>
+            </div>
+
+            <div class="slide">
+                <img src="sports.jpg.jpg" alt="sports" width="80%" height="800px">
+                <h3>Sports Ground</h3>
+                <p>A place where students participate in sports activites and maintain fitness.</p>
+            </div>
+
+            <div class="slide">
+                <img src="garden.jpg.jpeg" alt="garden" width="80%" height="800px">
+                <h3>Garden Area</h3>
+                <p>A peaceful green where space where students can relax and enjoy nature.</p>
+            </div>
+
+
+            <div class="slide">
+                <img src="computer1.jpg.jpg" alt="computer" width="80%" height="800px" >
+                <h3>Computer Lab</h3>
+                <p>A well-equipped lab where students partice programming and learn new technologies..</p>
+            </div>
+
+
+
+
+            <!-- buttons -->
+            <button class="btnprev">Previous</button>
+            <button class="btnnext">Next</button>
+
+            <!-- dots
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div> -->
+        </div>
+    </section>
+    <!-- student manager section -->
+    <section id="student-manager">
+        <h2 id="h2">Student Manager</h2>
+        <form id="studentform">
+            <input type="text" id="naam" placeholder="Student Name" required>
+            <input type="text" id="roll" placeholder="Roll Number" required>
+            <input type="text" id="course" placeholder="Course" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="tel" id="phone" placeholder="Contact Number" required>
+        </form>
+        <button class="btn1">Add Student</button>
+        <h3 id="h3">Registered Students</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Name</th>
+                    <th>Roll No.</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                    <th>Contact No.</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+            <!-- <button class="editbtn">Edit</button>
+        <button class="deletebtn">Delete</button> -->
+        </table>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
